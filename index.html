@@ -8,20 +8,33 @@
 </head>
 <body>
 <div class="header">Etch a Sketch</div>
-
 <div class="contents">
-    <div class="side">
-        <div class="one">
-         <div class="gridSize"> Gride size: </div>
-         <div class="Color">Color:</div>
+<div class="side">
+    <div class="one">
+
+        <div class="grid">
+         <div class="gridiSize">
+            <label>Grid size:</label><br>
+            <input type="number" id="userValue" placeholder="16"><br><br>
+            <input type="button" value="Submit" id="submitBtn"><br><br>
+            <div class="gridtext">GridText</div>
+         </div>
+        </div>
+
+        <div class="color">
+        <button id="ranColor">Random color</button> 
+        <button id="pink">Pink Color</button>
+        <button id="blue">Blue Color</button>
+        </div>
     </div>
         <div class="two">
             <button id="mode"><img src="images/moon.png" alt="moon" width="30px" height="auto"></button>
             <button id="undo"><img src="images/undo-button.png" alt="undo" width="30px" height="auto"></button>
             <button id="erase"><img src="images/eraser.png" alt="erase" width="30px" height="auto"></button>
      </div>
-    </div>
-    <div class="container"> </div>
+</div>
+
+<div class="container"> </div>
 </div>
 
 <script src="main.js"></script>
