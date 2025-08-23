@@ -5,13 +5,15 @@ const blue = document.querySelector("#blue")
 const userValue = document.querySelector("#userValue")
 const submit = document.querySelector("#submitBtn")
 const mode = document.querySelector("#mode")
-const undo = document.querySelector("#undo")
+const resetBtn = document.querySelector("#resetBtn")
+const eraseBtn = document.querySelector("#eraseBtn")
 let numItems = 16
 
 
 //AddEventListener 
 submit.addEventListener("click", inputValue);
-undo.addEventListener("click", clearGrid)
+resetBtn.addEventListener("click", clearGrid)
+eraseBtn.addEventListener("click", erasecells)
 ranColor.addEventListener("click", rainbowColor)
 pink.addEventListener("click", pinkColor)
 blue.addEventListener("click", blueColor)
@@ -76,6 +78,18 @@ function randomColor (e) {
     const rndCol= 'rgb(' + random(255) + ',' + random(255) +',' + random(255) + ')';
     e.target.style.backgroundColor = rndCol;
 }
+
+// Erase
+function erasecells() {
+  const erasecell = document.querySelectorAll(".cells")
+  erasecell.forEach(ecell => {
+    ecell.addEventListener("mouseover",() =>{
+      ecell.style.backgroundColor = ""
+    })
+  })
+}
+
+
 //Clear Grid - ok
 function clearGrid () {
   const cleargrid = document.querySelectorAll(".cells")

@@ -3,30 +3,28 @@ body {
     min-height: 100vh;
     font-family:  "Roboto", sans-serif;
     background-color: #fff;
+    font-size: 22px;
 }
 .header {
     margin: 0;
-    padding: 15px;
     border-bottom: 0.5px solid gray;
     text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-family: "Cute Font", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 * {
     box-sizing: border-box;
 }
-.contents {
-    display: flex;
-    justify-content: center;
-    gap: 64px;
-    margin-left: 180px;
-}
+
 .container {
 width: 500px;
   display: flex;
   flex-wrap: wrap;
   border: 1px solid gray;
+  margin-right: 180px;
 }
 .container> .cells {
   outline: 1px solid #d4d4d4;
@@ -35,21 +33,57 @@ width: 500px;
   aspect-ratio: 1 / 1;
 }
 
+.contents {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
 .side {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 120px;
+  display: flex;
+  flex-direction: column;
 }
-.one {
-    margin-bottom: 96px;
+.grid, .color, .options{
+  margin-bottom: 12px;
+  padding: 12px;
+
 }
-.two {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
+.gridSize {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.grid {
-    margin-bottom: 16px;
-    gap: 16px;
+
+.pick {
+  display: flex;
+  gap:14px
+  
+}
+#colorText {
+  margin-bottom: 4px;
+}
+#ranColor {
+    border-radius: 50%;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+#pink {
+     border-radius: 50%;
+    background-color: #FFD1DC;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+#blue {
+     border-radius: 50%;
+    background-color: #B0C4DE;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.options {
+  display: flex;
+  gap:16px;
 }

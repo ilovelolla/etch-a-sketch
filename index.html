@@ -5,32 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>etch-a-sketch</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 <div class="header">Etch a Sketch</div>
+
 <div class="contents">
 <div class="side">
     <div class="one">
 
         <div class="grid">
-         <div class="gridiSize">
             <label>Grid size:</label><br>
-            <input type="number" id="userValue" placeholder="16"><br><br>
-            <input type="button" value="Submit" id="submitBtn"><br><br>
-            <div class="gridtext">GridText</div>
-         </div>
+            <input type="number" id="userValue" placeholder="16"><br>
+            <input type="button" value="Submit" id="submitBtn"><br>
+            <div class="gridtext"></div>
+         
         </div>
 
-        <div class="color">
-        <button id="ranColor">Random color</button> 
-        <button id="pink">Pink Color</button>
-        <button id="blue">Blue Color</button>
+        <div class="color"> 
+        <div id="colorText">Color</div>
+        <div class="pick">
+        <button id="ranColor"></button> 
+        <button id="pink"></button>
+        <button id="blue"></button>
+        </div>
         </div>
     </div>
-        <div class="two">
+        <div class="options">
             <button id="mode"><img src="images/moon.png" alt="moon" width="30px" height="auto"></button>
-            <button id="undo"><img src="images/undo-button.png" alt="undo" width="30px" height="auto"></button>
-            <button id="erase"><img src="images/eraser.png" alt="erase" width="30px" height="auto"></button>
+            <button id="resetBtn"><img src="images/undo-button.png" alt="undo" width="30px" height="auto"></button>
+            <button id="eraseBtn"><img src="images/eraser.png" alt="erase" width="30px" height="auto"></button>
      </div>
 </div>
 
